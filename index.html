@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <title>Task</title>
+</head>
+
+<body>
+
+    <h1>PROYECCION ZONA NORTE </h1>
+
+
+
+  
+    
+    <div class="contenedor">
+
+        <form class="formulario" id="formulario">
+            
+            <div class="select">
+                <select name="todos" class="filter-todo">
+                    <option value="all">SUCURSAL</option>
+                    <option value="completed">FECHA</option>
+                    <option value="incomplete">FOLIO AUTOPLAZO</option>
+                    <option value="incomplete">MONTO AUTOPLAZO</option>
+                    <option value="incomplete">FOLIO HIPOTECARIO</option>
+                    <option value="incomplete">MONTO HIPOTECARIO</option>
+                    <option value="incomplete">FOLIO TDC</option>
+                    <option value="incomplete">FOLIO P.PERSONAL</option>
+                    <option value="incomplete">MONTO P.PERSONAL</option>
+                    <option value="incomplete">FOLIO MI P.PERSONAL</option>
+                    <option value="incomplete">PAQUETES NO</option>
+                    <option value="incomplete">NOMINA NO</option>
+                    <option value="incomplete">VENTA PYME</option>
+                    <option value="incomplete">INVERSIONES VISTA D.NUEVO</option>
+                    <option value="incomplete">INVERSIONES VISTA INCREMENTO</option>
+
+
+
+                </select>
+            
+            </div>
+            <input type="text" id="tarea">
+            <input type="submit" value="Agregar">
+        </form>
+
+        <div class="tareas" id="tareas">
+
+            <div class="item-tarea">
+                <p>FECHA</p>
+                <div class="botones">
+                    <button class="eliminar" data-id="${item.id}">x</button>
+                    <button class="completada" data-id="${item.id}">?</button>
+                </div>
+            </div>
+            <!-- <h5>~SIN TAREAS~</h5> -->
+
+        </div>
+
+    </div>
+ 
+    <form class="formulario" >
+
+        <input type="submit" value="ENVIAR A EXCEL">
+    </form>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
